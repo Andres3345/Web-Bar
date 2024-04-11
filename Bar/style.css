@@ -8,6 +8,9 @@
 html{
     font-family: 'Josefin Sans' sans-serif;
 }
+html{
+	scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
@@ -73,9 +76,7 @@ header.main-header{
     flex-basis: 15%;
 }
 .logo-header{
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #fff;
+   width: 200px;
 }
 
 /*menu header*/
@@ -104,7 +105,6 @@ ul.main-menu #nav-main-contact{
     display: flex;
     align-items: center;
     padding: .5rem 1rem;
-    background-color: var(--main-c);
     color: #fff;
 }
 li.menu-item{
@@ -115,9 +115,13 @@ li.menu-item{
     padding: .5rem 1rem;
     color: #fff;
 }
+li.menu-item{
+  text-decoration: none;
+}
 li.menu-item a:hover{
     color: var(--main-c);
 }
+
 
 
 i.toggle-menu img{
@@ -210,7 +214,7 @@ input#check{
 /* hero Section Homepage */
 
 .wrap-header-hero{
-    background: linear-gradient(to bottom, rgb(0 0 0 / .75), rgb(0 0 0 / .5)), url(img/dark.jpg);
+    background: linear-gradient(to bottom, rgb(0 0 0 / .40), rgb(0 0 0 / .75)), url(img/dark.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -259,6 +263,7 @@ input#check{
     padding: 1rem .5rem;
     display: flex;
     align-items: end;
+    box-shadow: 0px 6px 32px black;
 }
 .wrap-text_tarjeta-rest{
     color: #fff;
@@ -318,6 +323,7 @@ input#check{
     border-radius: 6px;
     display: flex;
     flex-flow: column;
+    box-shadow: 0px 0px 32px black;
   }
   hr{
     background: var(--main-c);
@@ -507,3 +513,5 @@ footer{
     }
   }
 
+
+  
